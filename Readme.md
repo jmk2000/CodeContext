@@ -16,7 +16,7 @@ A simple, powerful command-line tool to recursively scan a project directory, co
 You can install `CodeContext` via pip once it is published to PyPI. For now, you can install it directly from the Git repository:
 
 ```bash
-pip install git+[https://github.com/your-username/CodeContext.git](https://github.com/your-username/CodeContext.git)
+pip install git+[https://github.com/jmk2000/CodeContext.git](https://github.com/jmk2000/CodeContext.git)
 ```
 
 Additionally, for database schema dumping, you must have the appropriate command-line tools installed and available in your system's `PATH`:
