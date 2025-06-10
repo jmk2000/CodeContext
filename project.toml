@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codecontext"
+version = "0.1.0"
+authors = [
+  { name="Your Name", email="you@example.com" },
+]
+description = "A tool to gather and concatenate all source code and database schemas from a project into a single file for LLM analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PyYAML>=6.0",
+    "psycopg2-binary>=2.9.0",  # For PostgreSQL
+    "mysql-connector-python>=8.0.0", # For MySQL
+    # SQLite is in the standard library
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/CodeContext"
+Issues = "https://github.com/your-username/CodeContext/issues"
+
+[project.scripts]
+codecontext = "codecontext.__main__:main"
